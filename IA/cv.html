@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<!-- He descubierto que <footer> sirve para crear el pie de página de una web. -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV Deportivo | Pablo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #101c19;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #164e35, #101c19);
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 4px solid #71e69b;
+        }
+
+        header img {
+            width: 145px;
+            height: 145px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #71e69b;
+            box-shadow: 0 0 20px rgba(113, 230, 155, 0.4);
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            color: #71e69b;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            color: #d1e9d9;
+            font-size: 18px;
+        }
+
+        .contenedor {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .tarjeta {
+            background: #1c2d27;
+            padding: 25px;
+            margin-bottom: 22px;
+            border-radius: 14px;
+            border-left: 5px solid #71e69b;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #71e69b;
+            margin-bottom: 15px;
+            font-size: 23px;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .etiquetas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .etiqueta {
+            background: #285c40;
+            color: #b8ffce;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        a {
+            color: #71e69b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0a1410;
+            color: #a9c4b2;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .tarjeta {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://img.magnific.com/vector-premium/imagen-perfil-avatar-hombre-aislada-fondo-imagen-profil-avatar-hombre_1293239-4841.jpg?semt=ais_hybrid&w=740&q=80"
+             alt="Foto de perfil de Pablo">
+
+        <h1>PABLO</h1>
+        <p>⚽ ESTUDIANTE | DEPORTE | TECNOLOGÍA 🎾</p>
+        <p>Alumno de 4.º de ESO</p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="tarjeta">
+            <h2>👋 SOBRE MÍ</h2>
+            <p>
+                ¡Hola! Soy Pablo, alumno de 4.º de ESO.
+                Soy una persona trabajadora, con ganas de aprender
+                y de mejorar cada día. Me gustan el deporte,
+                la tecnología y los nuevos retos.
+            </p>
+        </section>
+
+        <section class="tarjeta">
+            <h2>⚽ MIS AFICIONES</h2>
+
+            <div class="etiquetas">
+                <span class="etiqueta">⚽ Fútbol</span>
+                <span class="etiqueta">🎾 Tenis</span>
+                <span class="etiqueta">💻 Tecnología</span>
+            </div>
+        </section>
+
+        <section class="tarjeta">
+            <h2>🏆 MIS HABILIDADES</h2>
+            <ul>
+                <li>Tengo calité.</li>
+                <li>Soy muy trabajador.</li>
+                <li>Soy buena persona.</li>
+                <li>Tengo ganas de aprender.</li>
+                <li>Me gustan los nuevos desafíos.</li>
+            </ul>
+        </section>
+
+        <section class="tarjeta">
+            <h2>🎓 FORMACIÓN</h2>
+            <p><strong>Educación Secundaria Obligatoria</strong></p>
+            <p>Actualmente cursando 4.º de ESO.</p>
+        </section>
+
+        <section class="tarjeta">
+            <h2>🌐 MI PÁGINA WEB</h2>
+            <p>
+                También puedes visitar mi página personal:
+            </p>
+            <p style="margin-top: 12px;">
+                <a href="https://es.pabloolmo.org" target="_blank">
+                    VISITAR EL DURO 99 →
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Pablo | Mi currículum deportivo</p>
+        <p>⚽ Nunca dejes de mejorar 🏆</p>
+    </footer>
+
+</body>
+</html>
