@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport"
+		content="width=device-width, initial-scale=1">
+
+	 <link rel="stylesheet" href="estilo.css"/>
+	  <title>Taberna El Albero · Carta</title>
+	  <style>
+	  .prueba
+	  </style>
+	  <!-- en el <head>, antes de <style> -->
+	<link rel="stylesheet"
+	  href="https://fonts.googleapis.com/css2?family=Caveat+Brush">
+</head>
+<body>
+
+	
+
+	<header>
+	  <h1>Taberna El Albero</h1>
+	  <p>Cocina casera desde 1987</p>
+	</header>
+	<button id="sorpresa">🎲 ¿Qué pido hoy?</button>
+<p id="consejo"></p>
+
+<!-- y justo antes de </body> -->
+<div id="cuenta">
+  Mi cuenta: <b id="total">0,00</b> €
+</div>
+<script>
+
+  const platos = document.querySelectorAll(".plato");
+const boton = document.getElementById("sorpresa");
+
+boton.onclick = function () {
+  const n = Math.floor(Math.random() * platos.length);
+  const elegido = platos[n];
+
+  platos.forEach(function (p) {
+    p.classList.remove("elegido");
+  });
+  elegido.classList.add("elegido");
+
+  const nombre = elegido.querySelector("span").textContent;
+  document.getElementById("consejo").textContent = "Hoy te recomiendo: " + nombre;
+};
+
+let total = 0;
+
+platos.forEach(function (plato) {
+  plato.onclick = function () {
+    const texto = plato.querySelector(".precio").textContent;
+    total = total + parseFloat(texto.replace(",", "."));
+    document.getElementById("total").textContent =
+      total.toFixed(2).replace(".", ",");
+  };
+});
+</script>
+
+	  <section>
+	  <h2>Tapas</h2>
+	  <!-- aquí los platos -->
+	  <img src="salmorejo.jpg"
+     alt="Salmorejo cordobés">
+	  
+	  <div class="plato">
+		  <span>Salmorejo cordobés</span>
+		  <span class="precio">2,80 €</span>
+		</div>
+		<div class="plato">
+	  <span>Berenjenas con miel
+	    <span class="tag veg">V</span>
+	  </span>
+	  <span class="precio">2,90 €</span>
+	</div>
+	<p class="desc">Con jamón y huevo duro</p>
+		
+	</section>
+
+	<section>
+	  <h2>Raciones</h2>
+	  <div class="plato">
+		  <span>Carrillada al vino</span>
+		  <span class="tag veg">SG</span>
+		  <span class="precio">13 €</span>
+		</div>
+		<div class="plato">
+	  <span>Flamenquín
+	    
+	  </span>
+	  <span class="precio">2,90 €</span>
+	</div>
+	<p class="desc">Con patatas fritas</p>
+	<img src="flamenquin.jpg"
+     alt="flamenquin">
+	</section>
+	<section>
+	  <h2>Postre</h2>
+	  <span>Tarta de queso
+	    
+	  </span>
+	  <span class="precio">3,80 €</span>
+	</div>
+	<img src="tarta de queso.jpg"
+     alt="tarta de queso">
+	</section>
+	<div class="menu">
+  <h2>Menú del día</h2>
+  <p>Primero + segundo + postre</p>
+  <p class="precio">12,50 €</p>
+</div>
+
+
+</body>
+</html>
