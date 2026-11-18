@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24352d">
+  <title>Taberna El Albero | Cocina cordobesa</title>
+  <meta name="description" content="Descubre la carta de Taberna El Albero: tapas, raciones y postres de inspiración cordobesa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="taberna-nueva.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <div class="hero-inner">
+      <span class="hero-badge">✦ SABORES DE CÓRDOBA ✦</span>
+      <div class="emblema" aria-hidden="true">✦</div>
+      <p class="eyebrow">TRADICIÓN CORDOBESA · DESDE 1987</p>
+      <h1>Taberna <em>El Albero</em></h1>
+      <p class="hero-desc">Un rincón para disfrutar de las recetas de siempre, las sobremesas largas y el auténtico sabor cordobés.</p>
+      <div class="hero-actions"><a class="hero-link" href="#carta">Explorar la carta ↓</a><a class="hero-link secondary" href="#contacto">Contacto ↗</a></div>
+    </div>
+  </header>
+
+  <nav class="navegacion" aria-label="Secciones de la carta">
+    <a href="#tapas">Tapas</a>
+    <a href="#raciones">Raciones</a>
+    <a href="#postres">Postres</a>
+    <a href="#menu-dia">Menú del día</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main id="carta" class="contenedor">
+    <div class="intro">
+      <p class="eyebrow oscuro">NUESTRA COCINA</p>
+      <h2>Una carta con <em>mucho arte</em></h2>
+      <p>Recetas de nuestra tierra, ingredientes de calidad y el ambiente de una taberna de toda la vida.</p>
+    </div>
+
+    <div class="herramientas">
+      <button id="sorpresa" type="button">🎲 Sorpréndeme con un plato</button>
+      <p id="consejo" role="status" aria-live="polite">¿No sabes qué elegir? ¡Deja que la suerte decida!</p>
+    </div>
+
+    <div class="frase reveal"><span>✦</span> «La buena mesa reúne a la buena gente» <span>✦</span></div>
+
+    <section id="tapas" class="seccion reveal">
+      <div class="titulo-seccion"><span class="icono">✺</span><div><p class="eyebrow oscuro">PARA EMPEZAR</p><h2>Tapas</h2></div></div>
+      <div class="grid-platos">
+        <article class="tarjeta plato" data-nombre="Salmorejo cordobés" data-precio="2.80" tabindex="0" role="button" aria-label="Añadir salmorejo cordobés, 2,80 euros">
+          <div class="foto foto-salmorejo"><img src="salmorejo.jpg" loading="lazy" alt="Cuenco de salmorejo cordobés" onerror="this.style.display='none'"><span class="sello">DE LA CASA</span></div>
+          <div class="datos"><div class="nombre-precio"><h3>Salmorejo cordobés</h3><strong>2,80 €</strong></div><p>Con jamón y huevo duro, como manda la tradición.</p><span class="anadir">＋ Añadir a mi cuenta</span></div>
+        </article>
+        <article class="tarjeta plato" data-nombre="Berenjenas con miel" data-precio="2.90" tabindex="0" role="button" aria-label="Añadir berenjenas con miel, 2,90 euros">
+          <div class="foto foto-berenjenas"><img src="berenjenas.jpg" alt="Berenjenas con miel" loading="lazy" onerror="this.style.display='none'"><span class="emoji-plato" aria-hidden="true">🍆</span><span class="sello verde">VEGETARIANO*</span></div>
+          <div class="datos"><div class="nombre-precio"><h3>Berenjenas con miel</h3><strong>2,90 €</strong></div><p>Crujientes por fuera, tiernas por dentro y con un toque dulce.</p><span class="anadir">＋ Añadir a mi cuenta</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="raciones" class="seccion reveal">
+      <div class="titulo-seccion"><span class="icono">✺</span><div><p class="eyebrow oscuro">PARA COMPARTIR</p><h2>Raciones</h2></div></div>
+      <div class="grid-platos">
+        <article class="tarjeta plato" data-nombre="Carrillada al vino" data-precio="13.00" tabindex="0" role="button" aria-label="Añadir carrillada al vino, 13 euros">
+          <div class="foto foto-carrillada"><img src="carrillada.jpg" alt="Carrillada al vino" loading="lazy" onerror="this.style.display='none'"><span class="emoji-plato" aria-hidden="true">🍲</span><span class="sello">COCINA LENTA</span></div>
+          <div class="datos"><div class="nombre-precio"><h3>Carrillada al vino</h3><strong>13,00 €</strong></div><p>Tierna y jugosa, cocinada a fuego lento con su salsa.</p><span class="anadir">＋ Añadir a mi cuenta</span></div>
+        </article>
+        <article class="tarjeta plato" data-nombre="Flamenquín cordobés" data-precio="2.90" tabindex="0" role="button" aria-label="Añadir flamenquín cordobés, 2,90 euros">
+          <div class="foto foto-flamenquin"><img src="flamenquin.jpg" loading="lazy" alt="Flamenquín cordobés" onerror="this.style.display='none'"><span class="sello">CLÁSICO</span></div>
+          <div class="datos"><div class="nombre-precio"><h3>Flamenquín cordobés</h3><strong>2,90 €</strong></div><p>Con patatas fritas y ese sabor que nunca falla.</p><span class="anadir">＋ Añadir a mi cuenta</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="postres" class="seccion reveal">
+      <div class="titulo-seccion"><span class="icono">✺</span><div><p class="eyebrow oscuro">EL TOQUE DULCE</p><h2>Postres</h2></div></div>
+      <div class="grid-platos">
+        <article class="tarjeta plato" data-nombre="Tarta de queso" data-precio="3.80" tabindex="0" role="button" aria-label="Añadir tarta de queso, 3,80 euros">
+          <div class="foto foto-tarta"><img src="tarta de queso.jpg" loading="lazy" alt="Porción de tarta de queso" onerror="this.style.display='none'"><span class="sello">IRRESISTIBLE</span></div>
+          <div class="datos"><div class="nombre-precio"><h3>Tarta de queso</h3><strong>3,80 €</strong></div><p>Cremosa, suave y perfecta para terminar la comida.</p><span class="anadir">＋ Añadir a mi cuenta</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="menu-dia" class="menu-dia reveal">
+      <div class="menu-adorno" aria-hidden="true">✦ ✦ ✦</div>
+      <p class="eyebrow">LA OPCIÓN DE CADA DÍA</p>
+      <h2>Menú del día</h2>
+      <p>Primero <span>+</span> Segundo <span>+</span> Postre</p>
+      <div class="precio-menu">12,50 €</div>
+      <button id="anadir-menu" type="button">＋ Añadir menú a mi cuenta</button>
+    </section>
+
+    <section id="galeria" class="galeria seccion reveal">
+      <div class="galeria-intro"><p class="eyebrow oscuro">UN PASEO POR NUESTRA COCINA</p><h2>Platos que entran <em>por los ojos</em></h2><p>Una pequeña muestra de los sabores de nuestra carta.</p></div>
+      <div class="galeria-grid">
+        <figure class="galeria-item grande"><img src="salmorejo.jpg" alt="Salmorejo cordobés" loading="lazy" onerror="this.style.display='none'"><figcaption>Salmorejo cordobés</figcaption></figure>
+        <figure class="galeria-item"><img src="flamenquin.jpg" alt="Flamenquín con patatas" loading="lazy" onerror="this.style.display='none'"><figcaption>Flamenquín</figcaption></figure>
+        <figure class="galeria-item"><img src="tarta de queso.jpg" alt="Tarta de queso" loading="lazy" onerror="this.style.display='none'"><figcaption>El toque dulce</figcaption></figure>
+      </div>
+      <p class="galeria-aviso">Para ver las fotografías, sube las imágenes con estos nombres a la misma carpeta que index.html.</p>
+    </section>
+    <section id="contacto" class="contacto reveal">
+      <div><p class="eyebrow">VEN A CONOCERNOS</p><h2>La mesa está preparada.</h2><p>¿Tienes alguna pregunta sobre nuestra carta? Puedes consultar nuestros platos y preparar tu visita.</p><p class="contacto-nota">Proyecto de demostración: añade aquí la dirección, el teléfono y el horario reales antes de publicar información de contacto.</p></div>
+      <a href="#inicio" class="contacto-boton">Volver al inicio ↑</a>
+    </section>
+    <p class="nota">* Consulta con el personal los ingredientes y alérgenos de cada plato. Los precios son los indicados en esta carta de ejemplo.</p>
+  </main>
+
+  <footer class="pie"><span>✦</span><h2>Taberna El Albero</h2><p>Tradición, sabor y buenos momentos desde 1987.</p><a href="#inicio">Volver arriba ↑</a></footer>
+
+  <div id="cuenta" class="cuenta" aria-live="polite">
+    <div><small>MI CUENTA · <span id="cantidad">0</span> platos</small><strong><span id="total">0,00</span> €</strong></div>
+    <button id="vaciar" type="button" aria-label="Vaciar la cuenta">Vaciar cuenta ↺</button>
+  </div>
+
+  <script>
+    const platos = [...document.querySelectorAll('.plato')];
+    const totalElemento = document.getElementById('total');
+    const cantidadElemento = document.getElementById('cantidad');
+    const consejo = document.getElementById('consejo');
+    let totalCentimos = 0;
+    let cantidad = 0;
+
+    function actualizarCuenta() {
+      totalElemento.textContent = (totalCentimos / 100).toFixed(2).replace('.', ',');
+      cantidadElemento.textContent = cantidad;
+    }
+    function agregar(nombre, precio) {
+      totalCentimos += Math.round(precio * 100);
+      cantidad++;
+      actualizarCuenta();
+      consejo.textContent = '✓ Has añadido ' + nombre + ' a tu cuenta.';
+    }
+    platos.forEach(plato => {
+      const seleccionar = () => agregar(plato.dataset.nombre, Number(plato.dataset.precio));
+      plato.addEventListener('click', seleccionar);
+      plato.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); seleccionar(); }
+      });
+    });
+    document.getElementById('sorpresa').addEventListener('click', () => {
+      const elegido = platos[Math.floor(Math.random() * platos.length)];
+      platos.forEach(p => p.classList.remove('elegido'));
+      elegido.classList.add('elegido');
+      consejo.textContent = '✨ Hoy te recomendamos: ' + elegido.dataset.nombre + '. ¡Pruébalo!';
+      elegido.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    document.getElementById('anadir-menu').addEventListener('click', () => agregar('Menú del día', 12.50));
+    document.getElementById('vaciar').addEventListener('click', () => {
+      totalCentimos = 0; cantidad = 0; actualizarCuenta();
+      consejo.textContent = 'Tu cuenta está vacía. ¡Elige algo rico!';
+      platos.forEach(p => p.classList.remove('elegido'));
+    });
+    // Aparición suave al desplazarse, respetando la preferencia de movimiento reducido.
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const observador = new IntersectionObserver((entradas) => {
+        entradas.forEach(entrada => {
+          if (entrada.isIntersecting) { entrada.target.classList.add('visible'); observador.unobserve(entrada.target); }
+        });
+      }, {threshold: 0.08});
+      document.querySelectorAll('.reveal').forEach(el => observador.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    }
+  </script>
+</body>
+</html>
